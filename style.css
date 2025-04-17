@@ -1,7 +1,78 @@
-#fichas {
-    margin-top: 35px;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a2a43, #145374);
+    font-family: Arial, sans-serif;
 }
 
-div.barra{
-    margin-top: 20px;
+.login-container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.login-container .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+}
+
+.login-container input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1c74b7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #145374;
+}
+
+.login-container .options {
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.login-container .options a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-container .options a:hover {
+    text-decoration: underline;
+}
+
+input::placeholder{
+    color: #fff;
 }
